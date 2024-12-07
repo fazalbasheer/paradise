@@ -1,1 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradise AuPair - Cultural Exchange Program</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        header .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #f0f0f0;
+        }
+        .hero {
+            background: url('/api/placeholder/1200/500') no-repeat center center;
+            background-size: cover;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero-content {
+            background: rgba(0,0,0,0.6);
+            padding: 30px;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .programs {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+        .program-card {
+            flex-basis: 30%;
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .how-it-works {
+            background-color: #f4f4f4;
+            padding: 50px 0;
+            text-align: center;
+        }
+        .steps {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+        .step {
+            flex-basis: 22%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        @media (max-width: 768px) {
+            .programs, .steps {
+                flex-direction: column;
+            }
+            .program-card, .step {
+                margin-bottom: 20px;
+            }
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Paradise AuPair</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Programs</a></li>
+                    <li><a href="#">How It Works</a></li>
+                    <li><a href="#">Apply Now</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Cultural Exchange Through AuPair Programs</h1>
+                    <p>Connect, Learn, and Grow with Families Around the World</p>
+                    <a href="#" class="btn">Start Your Journey</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="container programs">
+            <div class="program-card">
+                <h2>Au Pair Program</h2>
+                <p>Live with a host family, care for children, and experience a new culture.</p>
+            </div>
+            <div class="program-card">
+                <h2>Host Family Program</h2>
+                <p>Find trusted, caring international au pairs for your family.</p>
+            </div>
+            <div class="program-card">
+                <h2>Cultural Exchange</h2>
+                <p>Promote international understanding through meaningful connections.</p>
+            </div>
+        </section>
+
+        <section class="how-it-works">
+            <div class="container">
+                <h2>How Paradise AuPair Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <h3>1. Apply</h3>
+                        <p>Complete our simple online application process.</p>
+                    </div>
+                    <div class="step">
+                        <h3>2. Match</h3>
+                        <p>Get matched with the perfect host family or au pair.</p>
+                    </div>
+                    <div class="step">
+                        <h3>3. Prepare</h3>
+                        <p>Receive comprehensive support and guidance.</p>
+                    </div>
+                    <div class="step">
+                        <h3>4. Experience</h3>
+                        <p>Begin your life-changing cultural exchange journey.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h2>Paradise AuPair</h2>
+            <p>&copy; 2024 Paradise AuPair. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
