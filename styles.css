@@ -294,3 +294,9 @@ footer {
     opacity: 1;
     filter: blur(0);
 }
+.hero-image {
+    width: 100%; /* Make the image responsive */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add space above the image */
+    border-radius: 8px; /* Optional: add rounded corners for a softer look */
+}
