@@ -54,6 +54,8 @@ body {
 .logo img {
     height: 50px;
     margin-right: 15px;
+    max-width: 150px;
+    object-fit: contain;
 }
 
 .contact-info {
@@ -99,7 +101,7 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(rgba(74,144,226,0.7), rgba(44,62,80,0.7)), url('hero-background.jpg') no-repeat center center;
+    background: linear-gradient(rgba(74,144,226,0.7), rgba(44,62,80,0.7)), url('imagemain.jpg') no-repeat center center;
     background-size: cover;
     color: var(--white);
     text-align: center;
