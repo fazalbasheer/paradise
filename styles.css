@@ -298,18 +298,19 @@ body, html {
     margin: 0; /* Remove default margin */
 }
 
+body, html {
+    height: 100%; /* Ensure full height for the body and html */
+    margin: 0; /* Remove default margin */
+}
+
 .parallax {
-    /* The image used */
     background-image: url('imagemain.jpg'); /* Set your background image */
-    
-    /* Set a specific height for the section */
     min-height: 100vh; /* Full viewport height */
-    
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed; /* Fix the background image */
+    background-attachment: fixed; /* Create the parallax scrolling effect */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Prevent repeating of the image */
     background-size: cover; /* Cover the entire section */
+    position: relative; /* Position relative for absolute positioning of content */
 }
 
 .hero-content {
@@ -319,6 +320,11 @@ body, html {
     transform: translate(-50%, -50%); /* Offset to truly center */
     color: white; /* Text color for contrast */
     text-align: center; /* Center text alignment */
+    z-index: 1; /* Ensure text is above the image */
+}
+
+.btn-primary {
+    margin-top: 20px; /* Space between text and button */
 }
 @media only screen and (max-width: 768px) {
     .parallax {
