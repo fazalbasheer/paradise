@@ -224,3 +224,17 @@ footer h2 {
         font-size: 1.2rem;
     }
 }
+.blinking-button {
+    background-color: #337ab7; /* Blue background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    animation: blink-animation 1s infinite alternate;
+}
+
+@keyframes blink-animation {
+    0% { background-color: #337ab7; } /* Blue */
+    50% { background-color: #ffffff; color: #337ab7; } /* White with blue text */
+    100% { background-color: #337ab7; } /* Blue */
+}
