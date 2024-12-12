@@ -17,3 +17,35 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (targetElement) {
                 targetElement.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Parallax Effect
+    const parallaxBg = document.querySelector('.parallax-bg');
+    
+    window.addEventListener('scroll', () => {
+        let scrollPosition = window.pageYOffset;
+        parallaxBg.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+    });
+
+    // Scroll Reveal
+    const scrollReveal = () => {
+        const reveals = document.querySelectorAll('.scroll-reveal');
+        reveals.forEach(reveal => {
+            const windowHeight = window.innerHeight;
+            const revealTop = reveal.getBoundingClientRect().top;
+            const revealPoint = 150;
+
+            if (revealTop < windowHeight - revealPoint) {
+                reveal.classList.add('active');
+            } else {
+                reveal.classList.remove('active');
+            }
+        });
+    };
+
+    window.addEventListener('scroll', scrollReveal);
+});
